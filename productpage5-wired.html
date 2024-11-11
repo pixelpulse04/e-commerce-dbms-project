@@ -1,0 +1,89 @@
+
+               
+           
+
+
+      
+       
+
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="product1_css.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo">
+                <a href="#">FutureST0RE</a>
+            </div>
+            <ul>
+                <li><a href="Homepage.html">HOME</a></li>
+                <li><a href="Homepage.html">ABOUT</a></li>
+                <li><a href="cart.php">CART</a></li>
+                <button onclick="location.href='index1.html'">Account</button>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="product-container">
+        <div class="product-images">
+            <div class="image-slider">
+                <img src="1624954758293.png.webp" alt="" class="active">
+                <img src="1624954750774.png.webp" alt="">
+                <img src="1624954762700.png.webp" alt="">
+                <img src="1624954768769.png.webp" alt="">
+            </div>
+            <div class="slider-nav">
+                <button class="prev-btn">&lt;</button>
+                <button class="next-btn">&gt;</button>
+            </div>
+        </div>
+        <div class="product-info">
+
+            <h1 class="product-name" id="name">REALME BUDS 2 NEO</h1>
+           <p class="product-price" id="price">Rs. 1000</p>
+            <p class="product-category" id="category">wired</p>
+            <p class="product-id" id="product_id">10004</p>
+                <div class="product-description">
+                    <p>OVERVIEW</p>
+                <li >128GB RAM + 512GB storage</li>
+                <li > Battery: 5500mAh </li>
+                <li >Snapdragon 7+ Gen 3 Flagship Chipset</li>
+                <li>6000nit Hyber Display</li>
+                <li>120W SUPERVOOC Charger</li>
+                <li> Sony 50MP OIS Camera</li>
+                <li> Up to 12GB RAM + 512GB ROM</li>
+                </div>
+
+        <form id="buyForm" action="add_to_cart.php" method="POST">
+
+            <!-- <label  for="cart-details">Enter your cart-id </label>
+            <input type="text" name="c_id"> -->
+
+            <input type="hidden" name="product_id" value="4">
+            <input type="hidden" name="name" value="REALME BUDS 2 NEO">
+            <input type="hidden" name="price" value="999">
+            <input type="hidden" name="category" value="wired">
+            <button type="submit" class="buy-now-btn">Buy Now</button>
+            <button type="submit" class="add-to-cart-btn">Add to cart</button>
+        </form>
+        </div>
+    </div>
+    <div class="pro-d-img">
+        <img src="1624945463909.jpg.webp" alt="">
+        <img src="1624945470637.jpg.webp" alt="">
+        
+        <img src="1624945547127.jpg.webp" alt="">
+        <img src="1624945550622.jpg.webp" alt="">
+        <img src="1624945553098.jpg.webp" alt="">
+
+    </div>
+
+    <script src="product1_js.js"></script>
+</body>
+</html>

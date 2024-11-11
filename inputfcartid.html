@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>input to display cart</title>
+    </head>
+    <style>
+        .body{
+            text-decoration: none;
+            align-content: center;
+            
+        }
+        .form-box{
+    width: 380px;
+    height: 100px;
+    border-radius: 5%;
+    position: relative;
+    margin:6% auto;
+    background: #d5ffd0;
+    padding: 5px;
+    margin-top: 15%;
+    align-items: center;
+       }
+       label{
+            font-weight: bold;
+            font-size:large;
+            
+        }
+        #enter-btn{
+            color: rgb(1, 54, 78);
+            align-items: center;
+        }
+    </style>
+    <body>
+        <form class="form-box" action="cart.php" method="POST">
+            <label for="user-cart">Enter your cart-id</label>
+            <input type="text" name="cart_id" required>
+        </form>
+    </body>
+</html>

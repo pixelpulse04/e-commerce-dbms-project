@@ -1,0 +1,102 @@
+* Reset some basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1, h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+thead {
+    background-color: #4CAF50;
+    color: white;
+}
+
+th, td {
+    text-align: center;
+    padding: 12px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* Button styling */
+button {
+    background: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+button:hover {
+    background: #d32f2f;
+}
+
+.goback{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Make it responsive */
+@media screen and (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    td {
+        text-align: right;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    td[data-label="Delete"] {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}

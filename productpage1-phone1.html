@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="product1_css.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo">
+                <a href="#">FutureST0RE</a>
+            </div>
+            <ul>
+                <li><a href="Homepage.html">HOME</a></li>
+                <li><a href="Homepage.html">ABOUT</a></li>
+                <li><a href="cart.php">CART</a></li>
+                <button onclick="location.href='index1.html'">Account</button>
+            </ul>
+        </div>
+    </nav>
+        
+
+    <div class="product-container">
+        <div class="product-images">
+            <div class="image-slider">
+                <img src="00REALME-PICS/REALME-GT/001715839926059f10d4fa92291450b8efb2cabdb7f7e13.png.webp" alt="Product Image 1" class="active">
+                <img src="00REALME-PICS/REALME-GT/1715839899125f06b033947d940c89fb529da2774a702.png.webp" alt="Product Image 2">
+                <img src="00REALME-PICS/REALME-GT/1715839891395faeddd5622394296b3d43b26492139b6.png.webp" alt="Product Image 3">
+                <img src="00REALME-PICS/REALME-GT/17158398562798bae2d3790754ce78475861ce20017fd.png.webp" alt="Product Image 4">
+            </div>
+            <div class="slider-nav">
+                <button class="prev-btn">&lt;</button>
+                <button class="next-btn">&gt;</button>
+            </div>
+        </div>
+        <div class="product-info">
+
+            <h1 class="product-name" id="name">REALME GT 6T</h1>
+           <p class="product-price" id="price">Rs. 30499</p>
+            <p class="product-category" id="category">Mobile</p>
+            <p class="product-id" id="product_id">10001</p>
+                <div class="product-description">
+                    <p>OVERVIEW</p>
+                <li >128GB RAM + 512GB storage</li>
+                <li > Battery: 5500mAh </li>
+                <li >Snapdragon 7+ Gen 3 Flagship Chipset</li>
+                <li>6000nit Hyber Display</li>
+                <li>120W SUPERVOOC Charger</li>
+                <li> Sony 50MP OIS Camera</li>
+                <li> Up to 12GB RAM + 512GB ROM</li>
+                </div>
+
+        <form id="buyForm" action="add_to_cart.php" method="POST">
+
+            <!-- <label  for="cart-details">Enter your cart-id </label>
+            <input type="text" name="c_id"> -->
+
+            <input type="hidden" name="product_id" value="1">
+            <input type="hidden" name="name" value="REALME GT 6T">
+            <input type="hidden" name="price" value="30499">
+            <input type="hidden" name="category" value="Mobile">
+            <button type="submit" class="buy-now-btn">Buy Now</button>
+            <button type="submit" class="add-to-cart-btn">Add to cart</button>
+        </form>
+        </div>
+    </div>
+    <div class="pro-d-img">
+        <img src="00REALME-PICS/REALME-GT/1715839926059f10d4fa92291450b8efb2cabdb7f7e13.png.webp" alt="">
+        <img src="00REALME-PICS/REALME-GT/172249204467317d649eccb984fb5966c447c5b965d7d.jpg.webp" alt="">
+        <img src="00REALME-PICS/REALME-GT/1722492066065fcfa9462b71f4278b0478fa48903285f.jpg.webp" alt="">
+        <img src="00REALME-PICS/REALME-GT/172249211917773f6b8d6abe945bca1a7047fd0a1ad93.jpg.webp" alt="">
+        <img src="00REALME-PICS/REALME-GT/172249214377164fdd7d9c380473882358a59b51f6e17.jpg.webp" alt="">
+        <img src="00REALME-PICS/REALME-GT/17224921643686d04e37f58f8479bbd91050ceb8dacc7.jpg.webp" alt="">
+        <img src="00REALME-PICS/REALME-GT/172249218407998f3a1cd945d4af09a4fda3246980130.jpg.webp" alt="">
+
+        <img src="00REALME-PICS/REALME-GT/17224950636688f4e42796de344a0abe61c903989102f.jpg.webp" alt="">
+        <img src="00REALME-PICS/REALME-GT/17224950729229b622856d226416397f2ca0509ebc28c.jpg.webp" alt="">
+        <img src="00REALME-PICS/REALME-GT/17224950920904a13575c77e647b4883cdce9e838b542.jpg.webp" alt="">
+        <img src="00REALME-PICS/REALME-GT/17224951034505eb8042883824fd5932d97f130847c00.jpg.webp" alt="">
+    </div>
+
+    <script src="product1_js.js"></script>
+</body>
+</html>

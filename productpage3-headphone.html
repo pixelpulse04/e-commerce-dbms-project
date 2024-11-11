@@ -1,0 +1,81 @@
+
+       <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="product1_css.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo">
+                <a href="#">FutureST0RE</a>
+            </div>
+            <ul>
+                <li><a href="Homepage.html">HOME</a></li>
+                <li><a href="Homepage.html">ABOUT</a></li>
+                <li><a href="cart.php">CART</a></li>
+                <button onclick="location.href='index1.html'">Account</button>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="product-container">
+        <div class="product-images">
+            <div class="image-slider">
+                <img src="1728880078507c6227bd8e2384dedb85fa9740bf50383.png.webp" alt="Product Image 1" class="active">
+                <img src="1728880085234fb8dc5d6a5234da88e1c2082b0549b72.png.webp" alt="Product Image 2">
+                <img src="1728880091444c2ffbd25d8e6479aa6e36efa50da530c.png.webp" alt="Product Image 3">
+                <img src="1728880112197b10e6513bf404197947ba4f3ad97a801.png.webp" alt="Product Image 4">
+            </div>
+            <div class="slider-nav">
+                <button class="prev-btn">&lt;</button>
+                <button class="next-btn">&gt;</button>
+            </div>
+        </div>
+        <div class="product-info">
+
+            <h1 class="product-name" id="name">REALME TECHLIFE STUDIO H1</h1>
+           <p class="product-price" id="price">Rs. 8999</p>
+            <p class="product-category" id="category">Headphones</p>
+            <p class="product-id" id="product_id">10003</p>
+                <div class="product-description">
+                    <p>OVERVIEW</p>
+                <li >Battery-life: 70 hours</li>
+                <li >43dB active noice cancellation</li>
+                <li >Dual Device Connection</li>
+                <li>Call Noise Cancellation</li>
+                <li>40mm Giant PET diaphragm</li>
+                <li>Bluetooth 5.4</li>
+                <li>Charge for 10 minutes -> 10 hours music</li>
+                </div>
+
+        <form id="buyForm" action="add_to_cart.php" method="POST">
+
+            <!-- <label  for="cart-details">Enter your cart-id </label>
+            <input type="text" name="c_id"> -->
+
+            <input type="hidden" name="product_id" value="2">
+            <input type="hidden" name="name" value="REALME TECHLIFE STUDIO H1">
+            <input type="hidden" name="price" value="8999">
+            <input type="hidden" name="category" value="Headphones">
+            <button type="submit" class="buy-now-btn">Buy Now</button>
+            <button type="submit" class="add-to-cart-btn">Add to cart</button>
+        </form>
+        </div>
+    </div>
+    <div class="pro-d-img">
+        <img src="1729071739496b984698398d74786a395d81610dffa1f.jpg.webp" alt="">
+        <img src="1729071808449a8cb9d3d3da743878b1c22d10f3a18f9.jpg.webp" alt="">
+        <img src="1729071818553dc878c69ab5e409b9d777463a819444e.jpg.webp" alt="">
+       
+        <img src="1729072024771c9ed1a7d27bd472d8b5b7077bc530c40.jpg.webp" alt="">
+        <img src="1729072036694713bf84afa754c91b5718a700dbb997f.jpg.webp" alt=""> 
+    </div>
+
+    <script src="product1_js.js"></script>
+</body>
+</html>

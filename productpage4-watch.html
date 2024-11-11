@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="product1_css.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo">
+                <a href="#">FutureST0RE</a>
+            </div>
+            <ul>
+                <li><a href="Homepage.html">HOME</a></li>
+                <li><a href="Homepage.html">ABOUT</a></li>
+                <li><a href="cart.php">CART</a></li>
+                <button onclick="location.href='index1.html'">Account</button>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="product-container">
+        <div class="product-images">
+            <div class="image-slider">
+            <img src="1724037668473af1006818f8841e887474300a1702098.png.webp" alt="Product Image 1" class="active">
+            <img src="17211291505771086e19cb8d54f7cb8d01e2dabe32145.png.webp" alt="Product Image 2">
+            <img src="17211291733866881d423709b474b8639aa7a59be4cd1.png.webp" alt="Product Image 3">
+            <img src="1721129180668f5423caac9a943e8abd1496daefe1677.png.webp" alt="Product Image 4">
+            </div>
+            <div class="slider-nav">
+                <button class="prev-btn">&lt;</button>
+                <button class="next-btn">&gt;</button>
+            </div>
+        </div>
+        <div class="product-info">
+
+            <h1 class="product-name" id="name">REALME WATCH S2</h1>
+           <p class="product-price" id="price">Rs. 4999</p>
+            <p class="product-category" id="category">Watches</p>
+            <p class="product-id" id="product_id">10002</p>
+                <div class="product-description">
+                    <p>OVERVIEW</p>
+                <li >1.43" AMOLED DISPLAY</li>
+                <li >Customizable 20-day Battery-life</li>
+                <li >Comprehensive Sports & Health monitor</li>
+                <li>150+ Cloud Watch Faces</li>
+                <li>IP68 Dust & Water Resistance</li>
+                </div>
+
+        <form id="buyForm" action="add_to_cart.php" method="POST">
+
+            <!-- <label  for="cart-details">Enter your cart-id </label>
+            <input type="text" name="c_id"> -->
+
+            <input type="hidden" name="product_id" value="3">
+            <input type="hidden" name="name" value="REALME WATCH S2">
+            <input type="hidden" name="price" value="4999">
+            <input type="hidden" name="category" value="Watches">
+            <button type="submit" class="buy-now-btn">Buy Now</button>
+            <button type="submit" class="add-to-cart-btn">Add to cart</button>
+        </form>
+        </div>
+    </div>
+    <div class="pro-d-img">
+        <img src="172225000529458c1f51d14de4d5c83e0aa1586e7903e.jpg.webp" alt="">
+        <img src="1722250013736e48fcd6c63884d3b9229769aaf0a55c1.jpg.webp" alt="">
+        <img src="1722252803516f129d590a54044cb8718f11ff313da95.jpg.webp" alt="">
+        <img src="1722253023922f51908670d444d99afc73d832f3fba23.jpg.webp" alt="">
+
+        <img src="1722254327884eb4bf1d96f624e36865ef44981b6d244.jpg.webp" alt="">
+        <img src="1722254343369529c4c8f061e4912bc75b2ddb0fdae68.jpg.webp" alt="">
+    </div>
+
+    <script src="product1_js.js"></script>
+</body>
+</html>
